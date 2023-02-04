@@ -1,0 +1,319 @@
+/* ####################### dashbord */
+.dashboard {
+    background-color: var(--primary-color);
+    background-image: linear-gradient(45deg, transparent, var(--primary-color-2));
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15rem auto;
+}
+
+/* ####################### navbar */
+.d-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: transparent;
+    box-shadow: 0 0 12px 0 #2e2e2e4e;
+    height: 100vh;
+    width: 100%;
+}
+.d-nav__container {
+    display: grid;
+    gap: var(--gap-2);
+}
+
+.d-nav .i-logo {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem 4rem;
+}
+
+.d-nav__items {
+    font-size: medium;
+
+    font-style: normal;
+    color: var(--text-color-dark-2);
+}
+
+.d-nav__item {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 0 0.8rem 3rem;
+    gap: var(--gap);
+    cursor: pointer;
+}
+
+.d-nav__item i {
+    background-color: var(--text-color-dark-2);
+    border-radius: var(--primary-radius);
+    color: var(--primary-color);
+    display: grid;
+    font-size: small;
+    height: 1.8rem;
+    place-items: center;
+    width: 1.8rem;
+}
+
+.d-nav__item:hover {
+    background-color: #ffffffad;
+}
+
+.d-nav__item:hover i {
+    color: #ffffff;
+}
+
+.active {
+    background-color: #ffffff6b;
+}
+/* .d-logout {
+    display: flex;
+    align-items: center;
+     height: 8rem;
+    width: 90%; 
+    padding: 2rem;
+    margin: 2rem;
+    gap: var(--gap-1);
+    align-self: center;
+    box-shadow: 0 0 5px 5px #1f1f1f1a;
+    cursor: pointer;
+}
+
+.d-logout i {
+    background-color: var(--dark-color);
+    width: 2rem;
+    height: 2rem;
+} */
+
+/* ####################### header */
+/* .d-main {
+    display: grid;
+    grid-template-rows: 10% 90%;
+} */
+
+/* ####################### header */
+.d-header {
+    align-items: center;
+    box-shadow: var(--shadow);
+    color: var(--text-color-dark-2);
+    display: flex;
+    height: 4rem;
+    justify-content: space-between;
+    padding: 1rem;
+    position: sticky;
+}
+
+.d-header__title {
+    font-size: larger;
+    padding: 0 2rem;
+}
+
+.d-date {
+    margin: 0 auto;
+}
+
+.d-user-info {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 2rem;
+    gap: var(--gap-1);
+    align-items: center;
+}
+
+.d-user__dp {
+    position: relative;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 0 #2e2e2e4a;
+    background-color: #adeaff83;
+    border: 3px solid var(--primary-color-2);
+}
+.d-user__dp:hover {
+    border: 3px solid var(--d-item-color);
+}
+.d-user__container {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.d-user__message-icon {
+    position: absolute;
+    top: 0;
+    right: -0.6rem;
+    display: grid;
+    width: 1.2rem;
+    height: 1.2rem;
+    place-items: center;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 50%;
+    color: var(--text-color-white);
+    background-color: #f63a3a;
+}
+
+.d-user__cart {
+    position: relative;
+    cursor: pointer;
+}
+
+.d-user__cart:hover i {
+    color: var(--d-item-color);
+    text-shadow: 0 0 5px 0 #2e2e2e4a;
+}
+
+/* ####################### dashboard body */
+.d-body {
+    display: grid;
+    padding: 2rem;
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+    grid-template-rows: max-content;
+}
+
+.d-row {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.d-card__item {
+    height: 8rem;
+    border-radius: var(--primary-radius);
+    cursor: pointer;
+    background-image: linear-gradient(45deg, var(--primary-color), var(--primary-color-2));
+    box-shadow: var(--shadow);
+    background-color: var(--primary-color);
+    border: 0.3rem solid #b9dbf7;
+}
+
+.d-card__item:hover {
+    background-color: var(--text-color-white-2);
+    background-image: linear-gradient(60deg, var(--primary-color), var(--primary-color-2));
+}
+
+.d-card__item,
+.d-item__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    margin: 1rem;
+}
+
+.d-card__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0.8rem;
+    font-weight: bold;
+    border-image: linear-gradient(45deg, var(--primary-color), var(--primary-color-2)) 30% stretch;
+}
+
+.d-card__item p {
+    font-style: italic;
+}
+
+.d-card__item span {
+    font-size: 32px;
+    align-self: flex-end;
+}
+
+.d-item__title {
+    font-weight: bold;
+}
+
+.d-item {
+    background-color: var(--d-item-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    border-radius: var(--primary-radius);
+    font-weight: bold;
+
+    /* height: 2.5rem; */
+}
+
+.d-item:hover {
+    background-color: var(--text-color-white-2);
+}
+
+.d-item__increase {
+    color: #36de23;
+}
+.d-item__decrease {
+    color: #de2323;
+}
+
+.d-customer {
+    display: grid;
+}
+.d-customer__address {
+    font-size: smaller;
+    font-style: italic;
+    font-weight: normal;
+    color: #a1a1a1;
+}
+.d-customer-dp {
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0 #2e2e2e4a;
+    border: 3px solid var(--radio-color-2);
+    border-radius: var(--primary-radius-3);
+}
+
+.d-user__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ####################### user dashboard body */
+.d-user__body {
+    display: grid;
+    padding: 2rem;
+    gap: var(--gap-1);
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+    grid-template-rows: max-content;
+}
+
+.featured {
+    border-radius: var(--primary-radius-2);
+    background-color: var(--dark-color);
+    color: var(--primary-color);
+    padding: 0.25rem 2rem;
+    text-align: center;
+    width: 20%;
+}
+
+.d-product-container {
+    display: grid;
+    grid-template-columns: 45.75rem 25%;
+}
+
+.d-product-container .d-row {
+    row-gap: calc(var(--gap) + 0.1rem);
+}
+
+.d-product__item {
+    background-color: var(--dark-color);
+    border-radius: var(--primary-radius-3);
+    box-shadow: var(--product-shadow-2);
+    height: 14rem;
+    margin: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.d-product__item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

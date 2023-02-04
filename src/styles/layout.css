@@ -1,0 +1,336 @@
+/* ####################### landing page header */
+.i-header {
+    height: 3.5rem;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem;
+    background-color: var(--primary-color);
+    background-image: linear-gradient(45deg, var(--primary-color), var(--primary-color-2));
+    box-shadow: var(--shadow);
+}
+
+/* ####################### logo */
+.i-logo {
+    font-family: "Libre Bodoni", serif;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.i-logo__i {
+    font-style: italic;
+    color: #9ab0c7;
+}
+
+/* ####################### nav */
+.i-nav {
+    display: flex;
+    gap: var(--gap-2);
+    height: 80%;
+    align-items: center;
+}
+
+.i-nav-item {
+    height: 60%;
+    border-bottom: 0.2rem solid transparent;
+    cursor: pointer;
+}
+
+.i-nav-item:hover {
+    border-bottom: 0.1rem solid var(--dark-color);
+}
+
+.i-nav__link {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+/* ####################### hero section */
+.i-hero {
+    background-color: var(--primary-color);
+    background-image: linear-gradient(45deg, var(--primary-color), var(--primary-color-2));
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.i-hero__heading {
+    position: relative;
+    font-family: "Libre Bodoni", serif;
+    padding: 4rem 5rem;
+    height: 100%;
+    font-weight: 900;
+    font-size: xx-large;
+    color: var(--dark-color);
+    z-index: 1;
+}
+
+.i-hero__img {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.i-hero__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(150%);
+    mix-blend-mode: multiply;
+}
+
+/* ####################### product section */
+.product__head {
+    width: 100%;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.product-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(-135deg, #ffffff, #adeaff9c);
+}
+
+.featured-product-title {
+    font-weight: normal;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.product__body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2.5rem;
+    column-gap: 2.5rem;
+    row-gap: 4rem;
+}
+
+.product-item {
+    position: relative;
+    border-radius: var(--product-radius);
+    overflow: hidden;
+    box-shadow: var(--product-shadow-2);
+    cursor: pointer;
+}
+
+.product-item:hover,
+.d-product__item:hover {
+    box-shadow: var(--product-shadow);
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-description {
+    position: absolute;
+    padding: 2rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all 0.1s ease;
+}
+
+.product-item:hover .product-description,
+.d-product__item:hover .product-description {
+    background-image: linear-gradient(-45deg, var(--primary-color), var(--primary-color-2));
+}
+
+.product-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+}
+.d-product-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    font-size: 12px;
+}
+
+.desc {
+    font-weight: bold;
+    font-size: larger;
+    gap: var(--gap);
+    width: 100%;
+    color: transparent;
+    padding: 0 2rem;
+    opacity: 0;
+}
+.d-desc {
+    font-weight: bold;
+    gap: var(--gap);
+    width: 100%;
+    color: transparent;
+    padding: 0 2rem;
+    opacity: 0;
+}
+
+.desc i {
+    background-color: #c8e2ee;
+    padding: 0.3rem 0.6rem;
+    color: #9cafb8;
+    margin: 0.2rem;
+    border-radius: var(--primary-radius);
+    transition: color 0.1s ease;
+}
+
+.desc i:hover {
+    color: var(--dark-color);
+}
+.price {
+    font-size: larger;
+    font-weight: bold;
+}
+.product-title {
+    width: 100%;
+    color: transparent;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    padding: 0 2rem;
+    text-transform: uppercase;
+}
+.d-product-title {
+    color: transparent;
+    font-weight: bolder;
+}
+
+.product-item:hover .product-title,
+.product-item:hover .product-info,
+.d-product__item:hover .d-product-title,
+.d-product__item:hover .d-product-info {
+    color: var(--dark-color);
+    opacity: 1;
+}
+.product-item:hover .desc,
+.d-product__item:hover .d-desc {
+    color: var(--dark-color);
+    opacity: 1;
+}
+
+/* ####################### contact section */
+.about-us {
+    position: relative;
+    width: 100%;
+    color: var(--text-color-white);
+    background-color: var(--dark-color);
+}
+
+.about-us__img {
+    overflow: hidden;
+    height: 55rem;
+}
+.about-us img {
+    width: 100%;
+}
+
+.about-us__bar {
+    width: 0.2rem;
+    background-color: #ffffff1f;
+    margin: 4rem;
+    height: 70%;
+}
+
+.about-us__container {
+    background-color: #000000b5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: var(--gap-2);
+    padding: 5rem;
+}
+
+.visit-us__container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: var(--gap-2);
+    font-style: italic;
+    font-weight: lighter;
+    padding: 12rem 0;
+}
+
+.visit-us__container,
+.write-us__container {
+    font-size: larger;
+}
+.visit-us__container h3,
+.write-us__container h3 {
+    font-size: x-large;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.write-us__container {
+    display: grid;
+    grid-template-rows: 5rem 4rem;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 4rem 0;
+    width: 20rem;
+}
+
+/* ####################### landing page footer */
+.i-footer {
+    height: 3.5rem;
+    display: flex;
+    color: #454545;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.5rem;
+    background-color: var(--primary-color-4);
+}
+
+.i-footer .i-logo * {
+    color: #454545;
+    text-shadow: var(--shadow);
+}
+
+.i-footer__middle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: var(--gap-2);
+    height: 80%;
+}
+
+.i-payment-methods {
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+
+.i-payment-methods img {
+    filter: grayscale() brightness(100%);
+    height: 100%;
+}
+
+.i-socials i {
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.i-socials i:hover {
+    color: var(--dark-color);
+}

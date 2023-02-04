@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: "Calibri", sans-serif;
+    font-size: medium;
+    color: var(--dark-color);
+}
+
+input,
+textarea,
+button,
+select {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: "Calibri", sans-serif;
+    font-size: medium;
+}
+
+.active {
+    background-color: #ffffff6b;
+}
