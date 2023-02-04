@@ -25,4 +25,4 @@ iShop provides a user-friendly interface for online shopping. Upon logging in, u
 iShop was developed as a one-man project by [Browni Wilson](https://github.com/browniwils). The development process was a challenging but rewarding experience, and the end result is a world-class web application for e-commerce. The developer faced several challenges along the way, but was able to overcome them through hard work and dedication. The technology stack used for the project is mainly ReactJS. 
 
 ## Conclusion
-iShop offers a comprehensive solution for e-commerce, providing features for both administrators and normal users. With its user-friendly design and innovative features, iShop offers a seamless shopping experience for everyone. This document provides an overview of the
+iShop offers a comprehensive solution for e-commerce, providing features for both administrators and normal users. With its user-friendly design and innovative features, iShop offers a seamless shopping experience for everyone. This document provides an overview of the development process and the unique features offered by iShop.
