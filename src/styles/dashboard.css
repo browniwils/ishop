@@ -280,7 +280,7 @@
     gap: var(--gap-1);
     height: calc(100vh - 4rem);
     overflow-y: auto;
-    grid-template-rows: max-content;
+    grid-template-rows: repeat(3, max-content) auto;
 }
 
 .featured {
@@ -294,10 +294,12 @@
 
 .d-product-container {
     display: grid;
-    grid-template-columns: 45.75rem 25%;
+    grid-template-columns: auto 25%;
 }
 
-.d-product-container .d-row {
+.d-product-container .d-product-container__row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 11rem));
     row-gap: calc(var(--gap) + 0.1rem);
 }
 

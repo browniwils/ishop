@@ -16,11 +16,22 @@
     font-family: "Libre Bodoni", serif;
     font-weight: 900;
     font-size: xx-large;
+    cursor: pointer;
+}
+
+.i-logo span {
+    letter-spacing: -3px;
+    font-weight: bolder;
 }
 
 .i-logo__i {
     font-style: italic;
-    color: #9ab0c7;
+    color: #dd86d5;
+}
+
+.i-logo:hover .i-logo__i {
+    
+    color: var(--primary-color-transparent-3);
 }
 
 /* ####################### nav */
@@ -180,7 +191,8 @@
     gap: var(--gap);
     width: 100%;
     color: transparent;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
+    text-align: center;
     opacity: 0;
 }
 
