@@ -3,6 +3,8 @@ import { Routes, Route } from "react-router-dom";
 
 // pages
 import LandingPage from "./pages/LandingPage";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Main from "./pages/Dashboard/Main";
 import NotFound404 from "./pages/404";
@@ -41,6 +43,8 @@ function App() {
                 <Route path="customers" element={<Customer />} />
                 <Route path="staffs" element={<Staff />} />
             </Route>
+            <Route path="signup" element={<Signup />} />
+            <Route path="login" element={<Login />} />
             <Route path="*" element={<NotFound404 />} />
         </Routes>
     );

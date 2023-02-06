@@ -15,14 +15,7 @@
     width: 100%;
     padding: 0 0.5rem;
     font-size: 16px;
-    color: var(--dark-color-transparent);
-}
-
-.d-search__icon {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-color: black;
+    color: var(--dark-color);
 }
 
 .d-table {
@@ -56,7 +49,8 @@
     background-color: var(--text-color-white);
 }
 
-.d-table__list:last-child {
+.d-table__list:last-child,
+.d-table {
     border-bottom-left-radius: var(--primary-radius);
     border-bottom-right-radius: var(--primary-radius);
 }
