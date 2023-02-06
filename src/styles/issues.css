@@ -1,0 +1,13 @@
+.d-issue_body {
+    display: grid;
+    gap: var(--gap);
+    grid-template-rows: max-content auto max-content;
+    height: 33rem;
+    padding: 4rem;
+}
+
+.d-issue_body .btn__add {
+    justify-self: flex-end;
+    padding: 1rem 2rem;
+    width: max-content;
+}

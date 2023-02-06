@@ -54,7 +54,6 @@ function UserMain({ cards, products }) {
 }
 
 function Main({ isAdmin, cards, content }) {
-    console.log(isAdmin);
     return isAdmin ? <AdminMain cards={cards} recentElements={content} /> : <UserMain cards={cards} products={content} />;
 }
 

@@ -1,0 +1,68 @@
+@import url("dashboard.css");
+
+.d-search {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: max-content;
+    background-color: var(--primary-color-transparent);
+    border-radius: var(--primary-radius-3);
+    margin: 0 auto;
+    padding: 0.8rem 4rem;
+}
+
+.d-search__input {
+    width: 100%;
+    padding: 0 0.5rem;
+    font-size: 16px;
+    color: var(--dark-color-transparent);
+}
+
+.d-search__icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+}
+
+.d-table {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(21, max-content);
+    gap: 0.1rem;
+    margin: 2rem 0;
+    box-shadow: var(--shadow);
+}
+
+.d-table__header {
+    width: inherit;
+    display: flex;
+    justify-content: stretch;
+    background-color: var(--primary-color-transparent);
+    font-weight: bold;
+    border-top-left-radius: var(--primary-radius);
+    border-top-right-radius: var(--primary-radius);
+}
+
+.d-table__list {
+    width: inherit;
+    display: flex;
+    justify-content: stretch;
+    background-color: var(--primary-color-transparent-2);
+    cursor: pointer;
+}
+
+.d-table__list:hover {
+    background-color: var(--text-color-white);
+}
+
+.d-table__list:last-child {
+    border-bottom-left-radius: var(--primary-radius);
+    border-bottom-right-radius: var(--primary-radius);
+}
+
+.d-table__cell {
+    width: 20%;
+    text-align: center;
+    padding: 0.5rem;
+}

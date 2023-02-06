@@ -10,7 +10,7 @@ body {
     font-size: 62.5%;
     font-family: "Calibri", sans-serif;
     font-size: medium;
-    color: var(--dark-color);
+    color: var(--text-color-dark-2);
 }
 
 input,

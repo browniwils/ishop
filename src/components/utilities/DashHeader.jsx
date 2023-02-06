@@ -1,8 +1,24 @@
+import { useEffect, useState } from "react";
+import moment from "moment/moment";
+
+function DashDate() {
+    const [date, setDate] = useState(moment().format("ddd - DD-MM-YYYY, HH:mm:ss"));
+    useEffect(() => {
+        const delay = setTimeout(() => {
+            setDate(moment().format("ddd - DD-MM-YYYY HH:mm:ss"));
+        }, 1000);
+        return () => {
+            clearTimeout(delay);
+        };
+    }, [date]);
+    return <div className="d-date">{date}</div>;
+}
+
 function DashHeader({ headerInfo }) {
     return (
         <div className="d-header">
             <h5 className="d-header__title">{headerInfo.title}</h5>
-            <div className="d-date">{headerInfo.date}</div>
+            <DashDate />
             <div className="d-user-info">
                 <p>Welcome, {headerInfo.userName}</p>
                 <div className="d-user__dp">

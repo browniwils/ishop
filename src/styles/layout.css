@@ -16,6 +16,7 @@
     font-family: "Libre Bodoni", serif;
     font-weight: 900;
     font-size: xx-large;
+    color: var(--text-color-dark-2);
     cursor: pointer;
 }
 
@@ -26,12 +27,11 @@
 
 .i-logo__i {
     font-style: italic;
-    color: #dd86d5;
+    color: var(--text-color-dark);
 }
 
 .i-logo:hover .i-logo__i {
-    
-    color: var(--primary-color-transparent-3);
+    color: var(--text-color-dark-2);
 }
 
 /* ####################### nav */
