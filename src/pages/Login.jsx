@@ -11,11 +11,11 @@ function Login() {
                     <form className="login__form">
                         <div className="login__form-group">
                             <input type="email" name="" placeholder="Email: " />
-                            <input type="password" name="" placeholder="Password " />
+                            <input type="password" name="" placeholder="Password: " />
                         </div>
                         <p>
                             <span>forgotten password? </span>
-                            <Link href="/reset-password">click here</Link>
+                            <Link to="/reset-password">click here</Link>
                         </p>
                         <p>
                             <span>doesn't have account? </span>
@@ -25,14 +25,14 @@ function Login() {
                     </form>
                     <div className="login__alternative">
                         <p>or login with:</p>
-                        <div classNameName="login__3rd-party">
-                            <span classNameName="login__socials">
+                        <div className="login__3rd-party">
+                            <span className="login__socials">
                                 <i className="fa-brands fa-google"></i>
                             </span>
-                            <span classNameName="login__socials">
+                            <span className="login__socials">
                                 <i className="fa-brands fa-facebook-f"></i>
                             </span>
-                            <span classNameName="login__socials">
+                            <span className="login__socials">
                                 <i className="fa-brands fa-twitter"></i>
                             </span>
                         </div>

@@ -15,9 +15,10 @@ function DashDate() {
 }
 
 function DashHeader({ headerInfo }) {
+
     return (
         <div className="d-header">
-            <h5 className="d-header__title">{headerInfo.title}</h5>
+            <h5 className="d-header__title">{headerInfo.dashTitle}</h5>
             <DashDate />
             <div className="d-user-info">
                 <p>Welcome, {headerInfo.userName}</p>

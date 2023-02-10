@@ -24,6 +24,11 @@ select {
     font-size: medium;
 }
 
+a {
+    text-decoration: none;
+    color: var(--text-color-dark-2);
+}
+
 .active {
     background-color: #ffffff6b;
 }

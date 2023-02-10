@@ -1,13 +1,11 @@
-import InventoryItem from "../../components/utilities/InventoryItem";
+import InventoryItem from "../../components/utilities/ListItem";
+import SearchBar from "../../components/utilities/DashSearchBar";
 
 function Inventory() {
+    // get header titles with for keys in object loop and store it in a variable
     return (
         <div className="d-body">
-            <div className="d-search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input className="d-search__input" placeholder="Search..." />
-            </div>
-
+            <SearchBar placeholder="inventories" />
             <div className="d-table">
                 <div className="d-table__header">
                     <span className="d-table__cell">ID</span>
