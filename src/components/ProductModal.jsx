@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import Modal from "./utilities/Modal";
 
 function ProductModal() {
+    const navigate = useNavigate();
     const [quantity, setQuantity] = useState(1);
     const { title, price, status, maxStock, sizes, image, desc } = {
         title: "Range Rover",
@@ -34,10 +36,14 @@ function ProductModal() {
         }
     };
 
+    const handleCloseModal = () => {
+        navigate(-1);
+    };
+
     return (
         <Modal>
             <div className="modal__overlay">
-                <div className="modal__close-icon">
+                <div onClick={handleCloseModal} className="modal__close-icon">
                     <i className="fa-solid fa-xmark"></i>
                 </div>
                 <div className="product__container">

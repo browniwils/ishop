@@ -1,0 +1,121 @@
+.d-compose-message {
+    background-color: var(--dark-color);
+    border-radius: var(--primary-radius-2);
+    bottom: 3rem;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    display: grid;
+    height: 3rem;
+    place-items: center;
+    position: fixed;
+    right: 3rem;
+    transform: scale(1);
+    width: 3rem;
+}
+
+.d-compose-message:hover {
+    background-color: var(--dark-color-transparent-2);
+}
+.d-compose-message:active {
+    background-color: var(--dark-color);
+    transform: scale(0.95);
+}
+
+.d-compose-message i {
+    color: var(--primary-color);
+}
+
+.d-compose-message:active i {
+    color: var(--primary-color-transparent-3);
+}
+
+.message-modal {
+    background-color: var(--dark-color-transparent-2);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+}
+
+.compose-message {
+    background-color: var(--primary-color);
+    border-radius: var(--primary-radius-2);
+    display: grid;
+    grid-template-rows: max-content;
+    height: max-content;
+    left: 50%;
+    position: fixed;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+.compose-message__header {
+    background-color: var(--primary-color-transparent-2);
+    border-top-left-radius: var(--primary-radius-2);
+    border-top-right-radius: var(--primary-radius-2);
+    font-size: xx-large;
+    padding: 1rem 2rem;
+}
+
+.compose-message__container {
+    overflow: hidden;
+    border-radius: var(--primary-radius-2);
+    display: grid;
+    grid-template-rows: repeat(4, max-content);
+    margin: 2rem auto 3rem;
+    width: 80%;
+}
+
+.compose-message__subject {
+    padding: 1rem 2rem;
+    background-color: var(--primary-color-transparent-2);
+}
+
+.compose-message__body {
+    background-color: var(--text-color-white-2);
+    height: 18rem;
+    padding: 1rem 2rem;
+    border-bottom-left-radius: var(--primary-radius-2);
+    border-bottom-right-radius: var(--primary-radius-2);
+}
+
+.compose-message__body textarea {
+    width: 100%;
+    height: 100%;
+}
+
+.compose-message__attachment {
+    display: flex;
+    gap: var(--gap);
+    color: var(--text-color-white-2);
+}
+
+.compose-message__attachment label {
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    display: flex;
+    gap: var(--gap-1);
+    width: max-content;
+    justify-content: space-between;
+    text-transform: capitalize;
+    background-color: var(--text-color-dark);
+    cursor: pointer;
+    border-radius: var(--primary-radius);
+}
+.compose-message__attachment label span {
+    padding: 0 0.5rem;
+    border-left: 1px solid var(--text-color-white-2);
+}
+
+.compose-message__attachment input {
+    display: none;
+}
+
+button.btn__add {
+    width: max-content;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}

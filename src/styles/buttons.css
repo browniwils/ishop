@@ -35,9 +35,12 @@
 }
 .btn__explore:active,
 .btn__signup:active,
-.btn__add:active, .product__btn:active, .modal__close-icon:active {
+.btn__add:active,
+.product__btn:active,
+.modal__close-icon:active {
     background-color: #111111;
     color: var(--primary-color-transparent-3);
+    transform: scale(0.95);
 }
 
 /* ###################### form  */

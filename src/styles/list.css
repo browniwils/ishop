@@ -21,10 +21,11 @@
 .d-table {
     width: 100%;
     display: grid;
-    grid-template-rows: repeat(21, max-content);
-    gap: 0.1rem;
+    /* grid-template-rows: repeat(21, max-content); */
+    gap: .1rem;
     margin: 2rem 0;
     box-shadow: var(--shadow);
+    height: max-content;
 }
 
 .d-table__header {
@@ -35,11 +36,13 @@
     font-weight: bold;
     border-top-left-radius: var(--primary-radius);
     border-top-right-radius: var(--primary-radius);
+    height: max-content;
 }
 
 .d-table__list {
     width: inherit;
     display: flex;
+    height: max-content;
     justify-content: stretch;
     background-color: var(--primary-color-transparent-2);
     cursor: pointer;

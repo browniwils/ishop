@@ -22,6 +22,7 @@ select {
     background-color: transparent;
     font-family: "Calibri", sans-serif;
     font-size: medium;
+    width: 100%;
 }
 
 a {

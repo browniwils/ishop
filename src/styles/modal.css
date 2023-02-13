@@ -1,3 +1,9 @@
+.backdrop {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+}
 .modal__backdrop {
     background-color: var(--dark-color);
     background-image: url("../assets/cart_with_woman.png");
